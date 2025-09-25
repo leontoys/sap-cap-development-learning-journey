@@ -1,0 +1,6 @@
+{
+  "requires": {
+    "db": { "kind": "sqlite", "impl": "@cap-js/sqlite" },
+    "auth": { "kind": "mocked" }
+  }
+}
