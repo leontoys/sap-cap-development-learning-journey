@@ -14,7 +14,7 @@
   },
   "scripts": {
     "watch": "cds watch",
-    "start": "node .",//"cds-serve",
+    "start": "node .",
     "jest": "npx jest --silent",
     "test": "chest"
   },
