@@ -2,22 +2,23 @@
   "name": "@capire/incidents",
   "version": "1.0.0",
   "dependencies": {
+    "@cap-js/sqlite": ">=1",
     "@sap/cds": ">=8",
-    "express": "^4",
-    "@cap-js/sqlite": ">=1"
+    "@sap/cds-dk": "^9.3.2",
+    "express": "^4"
   },
   "devDependencies": {
-    "@cap-js/cds-test": "*",
+    "@cap-js/attachments": "^2",
     "@cap-js/audit-logging": ">=0.8.3",
-    "@cap-js/change-tracking": "^1.0.6",
-    "@cap-js/attachments": "^2"
+    "@cap-js/cds-test": "*",
+    "@cap-js/change-tracking": "^1.0.6"
   },
   "scripts": {
     "watch": "cds watch",
     "start": "node .",
     "jest": "npx jest --silent",
     "test": "chest",
-        "prestart": "cds deploy --to sqlite:db.sqlite"
+    "prestart": "cds deploy --to sqlite:db.sqlite"
   },
   "sapux": [
     "app/incidents"
