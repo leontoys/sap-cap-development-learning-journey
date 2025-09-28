@@ -17,8 +17,8 @@
     "watch": "cds watch",
     "start": "cds-serve",
     "jest": "npx jest --silent",
-    "test": "chest"
-  },
+    "test": "chest",
+  "prestart": "cds deploy --to postgres"  },
   "sapux": [
     "app/incidents"
   ],
