@@ -1,5 +1,16 @@
 {
   "requires": {
+    "db": {
+      "kind": "${CDS_REQUIRES_DB_KIND}",
+      "credentials": {
+        "ssl": "${CDS_REQUIRES_DB_CREDENTIALS_SSL}",
+        "pool": {
+          "min": "${CDS_REQUIRES_DB_CREDENTIALS_POOL_MIN}",
+          "max": "${CDS_REQUIRES_DB_CREDENTIALS_POOL_MAX}",
+          "acquireTimeoutMillis": "${CDS_REQUIRES_DB_CREDENTIALS_ACQUIRETIMEOUTMILLIS}"
+        }
+      }
+    },
     "auth": {
       "kind": "mocked"
     }
