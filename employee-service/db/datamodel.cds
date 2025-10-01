@@ -1,15 +1,26 @@
 namespace employee.service.db;
 
-entity Employee {
-    key employeeID : UUID;
+using { cuid, managed } from '@sap/cds/common';
+
+
+type CommonFields {
     firstName : String;
     lastName : String;
     address : String;
     mobile : String;
+}
+
+entity Employee : CommonFields, cuid, managed { 
     salary : Decimal(10,2); 
     email : String;
     designation : String;
+    //familyMembers : Association to many FamilyMember on familyMembers.employee  = $self
+    familyMembers : Composition of many FamilyMember on familyMembers.employee = $self
 }
 
+entity FamilyMember : CommonFields, cuid,managed {
+    relationship : String;
+    employee : Association to Employee;
+}
 
 

@@ -1,6 +1,0 @@
-employeeID,firstName,lastName,address,mobile,salary,email,designation
-123e4567-e89b-12d3-a456-426614174000,Priya,Sharma,"45 Park Street, Mumbai",+919876543210,"750000",priya.sharma@company.com,Software Engineer
-123e4567-e89b-12d3-a456-426614174001,Arjun,Patel,"22 Gandhi Road, Delhi",+918765432109,"920000",arjun.patel@company.com,Senior Developer
-123e4567-e89b-12d3-a456-426614174002,Neha,Reddy,"8 Jubilee Hills, Hyderabad",+917654321098,"680000",neha.reddy@company.com,QA Analyst
-123e4567-e89b-12d3-a456-426614174003,Vikram,Singh,"15 MG Road, Bangalore",+919988776655,"1200000",vikram.singh@company.com,Tech Lead
-123e4567-e89b-12d3-a456-426614174004,Ananya,Desai,"30 Marine Drive, Mumbai",+918899776655,"550000",ananya.desai@company.com,Intern
