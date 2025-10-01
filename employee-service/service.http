@@ -1,0 +1,54 @@
+
+GET http://localhost:4004/odata/v4/employee-odata/Employee
+
+###
+GET http://localhost:4004/odata/v4/employee-odata/Employee  
+
+
+###
+POST http://localhost:4004/odata/v4/employee-odata/Employee
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Sarah",
+  "lastName": "Williams",
+  "address": "101 Maple Drive",
+  "mobile": "555-2345",
+  "salary": 65000,
+  "email": "sarah.williams@example.com",
+  "designation": "UX Designer"
+}
+
+###
+POST http://localhost:4004/odata/v4/employee-odata/Employee
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Sarah",
+  "lastName": "Williams",
+  "address": "101 Maple Drive",
+  "mobile": "555-2345",
+  "salary": 65000,
+  "email": "sarah.williams@example.com",
+  "designation": "UX Designer",
+  "familyMembers": [
+    {
+      "firstName": "John",
+      "lastName": "Williams",
+      "address": "101 Maple Drive",
+      "mobile": "555-1234",
+      "relationship": "Spouse"
+    },
+    {
+      "firstName": "Emily",
+      "lastName": "Williams",
+      "address": "101 Maple Drive",
+      "mobile": "555-5678",
+      "relationship": "Daughter"
+    }
+  ]
+}
+
+

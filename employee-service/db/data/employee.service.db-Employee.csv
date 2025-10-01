@@ -1,0 +1,4 @@
+ID,salary,email,designation,firstName,lastName,address,mobile,createdAt,createdBy,modifiedAt,modifiedBy
+1,50000.00,john.doe@example.com,Software Engineer,John,Doe,123 Elm St,555-1234,2023-10-01,john_admin,2023-10-01,john_admin
+2,75000.00,jane.smith@example.com,Project Manager,Jane,Smith,456 Oak Ave,555-5678,2023-10-02,jane_admin,2023-10-02,jane_admin
+3,60000.00,alex.johnson@example.com,Data Analyst,Alex,Johnson,789 Pine Blvd,555-8765,2023-10-03,alex_admin,2023-10-03,alex_admin
