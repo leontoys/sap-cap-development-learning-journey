@@ -1,4 +1,6 @@
 using EmployeeOdataService as service from '../../srv/service';
+using from '../../db/datamodel';
+
 annotate service.Employee with @(
     UI.FieldGroup #GeneratedGroup : {
         $Type : 'UI.FieldGroupType',
@@ -38,14 +40,45 @@ annotate service.Employee with @(
                 Label : 'designation',
                 Value : designation,
             },
+            {
+                $Type : 'UI.DataField',
+                Value : familyMembers.address,
+                Label : 'address',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : familyMembers.firstName,
+                Label : 'firstName',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : familyMembers.lastName,
+                Label : 'lastName',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : familyMembers.mobile,
+                Label : 'mobile',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : familyMembers.relationship,
+                Label : 'relationship',
+            },
         ],
     },
     UI.Facets : [
         {
             $Type : 'UI.ReferenceFacet',
-            ID : 'GeneratedFacet1',
-            Label : 'General Information',
-            Target : '@UI.FieldGroup#GeneratedGroup',
+            Label : 'Employees',
+            ID : 'Employees',
+            Target : '@UI.FieldGroup#Employees',
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Label : 'Family',
+            ID : 'Family',
+            Target : 'familyMembers/@UI.LineItem#Family',
         },
     ],
     UI.LineItem : [
@@ -75,5 +108,75 @@ annotate service.Employee with @(
             Value : salary,
         },
     ],
+    UI.FieldGroup #Employees : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : address,
+                Label : 'address',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : designation,
+                Label : 'designation',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : email,
+                Label : 'email',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : firstName,
+                Label : 'firstName',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : ID,
+                Label : 'ID',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : lastName,
+                Label : 'lastName',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : salary,
+                Label : 'salary',
+            },
+        ],
+    },
+    UI.FieldGroup #Family : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+        ],
+    },
+);
+
+annotate service.FamilyMember with @(
+    UI.LineItem #Family : [
+        {
+            $Type : 'UI.DataField',
+            Value : firstName,
+            Label : 'firstName',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : lastName,
+            Label : 'lastName',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : relationship,
+            Label : 'relationship',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : mobile,
+            Label : 'mobile',
+        },
+    ]
 );
 
