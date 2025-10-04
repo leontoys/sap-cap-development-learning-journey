@@ -13,7 +13,7 @@ type CommonFields {
 entity Employee : CommonFields, cuid, managed { 
     salary : Decimal(10,2); 
     email : String;
-    designation : String;
+    designation : Association to Designations;
     //familyMembers : Association to many FamilyMember on familyMembers.employee  = $self
     familyMembers : Composition of many FamilyMember on familyMembers.employee = $self
 }
@@ -21,6 +21,11 @@ entity Employee : CommonFields, cuid, managed {
 entity FamilyMember : CommonFields, cuid,managed {
     relationship : String;
     employee : Association to Employee;
+}
+
+entity Designations  {
+    key code : String;
+    name : String;
 }
 
 

@@ -1,4 +1,8 @@
-ID,salary,email,designation,firstName,lastName,address,mobile,createdAt,createdBy,modifiedAt,modifiedBy
-1,50000.00,john.doe@example.com,Software Engineer,John,Doe,123 Elm St,555-1234,2023-10-01,john_admin,2023-10-01,john_admin
-2,75000.00,jane.smith@example.com,Project Manager,Jane,Smith,456 Oak Ave,555-5678,2023-10-02,jane_admin,2023-10-02,jane_admin
-3,60000.00,alex.johnson@example.com,Data Analyst,Alex,Johnson,789 Pine Blvd,555-8765,2023-10-03,alex_admin,2023-10-03,alex_admin
+ID,firstName,lastName,address,mobile,salary,email,designation_code
+E001,Alice,Johnson,"123 Main St, Anytown",555-1234,75000.00,alice.j@corp.com,D001
+E002,Bob,Williams,"45 Oak Ave, Smallville",555-5678,120000.50,bob.w@corp.com,D002
+E003,Charlie,Brown,"78 Pine Ln, Big City",555-9012,150000.00,charlie.b@corp.com,D003
+E004,Diana,Miller,"90 River Rd, Townsville",555-3456,65000.75,diana.m@corp.com,D004
+E005,Edward,Garcia,"11 Lake View, Seaside",555-7890,92000.00,edward.g@corp.com,D005
+E006,Fiona,Davis,"22 Hilltop Way, Summit",555-2109,55000.25,fiona.d@corp.com,D006
+E007,George,Rodriguez,"33 Valley Cir, Canyon",555-4321,135000.00,george.r@corp.com,D007
