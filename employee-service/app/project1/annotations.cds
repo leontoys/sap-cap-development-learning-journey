@@ -194,3 +194,7 @@ annotate service.Employee with {
     )
 };
 
+annotate service.Employee @(Common.SideEffects #updateSalary : {
+    SourceProperties  : ['designation_code'],
+    TargetProperties: ['salary']
+});
