@@ -26,6 +26,19 @@
           "url": "db.sqlite"
         }
       },
+      "auth":{
+        "kind":"mocked",
+        "users":{
+          "employee":{
+            "roles":["employee"],
+            "password":"123"
+          },
+          "manager":{
+            "roles":["manager"],
+            "password":"123"
+          }
+        }
+      },
       "Northwind": {
         "kind": "odata",
         "model": "srv/external/Northwind",
