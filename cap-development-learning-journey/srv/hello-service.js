@@ -1,7 +1,7 @@
-const cds = require('@sap/cds')
+const cds = require('@sap/cds');
 
-class HelloService extends cds.ApplicationService{
-    sayHello(name) {return "Hello"+name}
+class MyService extends cds.ApplicationService {
+    sayHello(name) { return "Hello " + name; }
 }
 
-module.exports = HelloService
+module.exports = MyService;
