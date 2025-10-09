@@ -18,7 +18,10 @@
     "start": "cds-serve",
     "jest": "npx jest --silent",
     "test": "chest",
-  "prestart": "cds deploy --to postgres"  },
+  "prestart": "cds deploy --to postgres",
+    "deploy:db": "npx cds deploy --to \"$POOLER_URL\"",
+  "start:no-deploy": "node ./srv/server.js"
+  },
   "sapux": [
     "app/incidents"
   ],
