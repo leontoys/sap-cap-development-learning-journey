@@ -1,18 +1,16 @@
 {
   "requires": {
     "db": {
-      "kind": "${CDS_REQUIRES_DB_KIND}",
+      "kind": "postgres",
+      "impl": "@cap-js/postgres",
       "credentials": {
-        "ssl": "${CDS_REQUIRES_DB_CREDENTIALS_SSL}",
+        "connectionString": "postgresql://postgres:kVKMgHYPC8m3Jp@db.aetjsfqozmfvsntgvopd.supabase.co:5432/postgres?sslmode=require",
         "pool": {
-          "min": "${CDS_REQUIRES_DB_CREDENTIALS_POOL_MIN}",
-          "max": "${CDS_REQUIRES_DB_CREDENTIALS_POOL_MAX}",
-          "acquireTimeoutMillis": "${CDS_REQUIRES_DB_CREDENTIALS_ACQUIRETIMEOUTMILLIS}"
+          "min": 0,
+          "max": 5,
+          "acquireTimeoutMillis": 10000
         }
       }
-    },
-    "auth": {
-      "kind": "mocked"
     }
   }
 }
