@@ -1,1 +1,0 @@
-SELECT * FROM employee_service_db_Employee
