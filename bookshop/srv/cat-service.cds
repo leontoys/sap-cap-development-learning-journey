@@ -1,9 +1,5 @@
-using { sap.capire.bookshop as my  } from '../db/schema';
+using my.bookshop as my from '../db/schema';
 
 service CatalogService {
-
-    entity Books as projection on my.Books;
-
-    entity Authors as projection on my.Authors;
-
+    @readonly entity Books as projection on my.Books;
 }
