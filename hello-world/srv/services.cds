@@ -1,10 +1,11 @@
-service bookshop {
-    entity Books {
-        key ID : Integer;
+using { cuid,managed } from '@sap/cds/common';
+
+
+service bookshop  {
+    entity Books: cuid, managed {
         title : String;
     }
-    entity Authors {
-        key ID : Integer;
+    entity Authors : cuid, managed {
         name : String;
     }
 }
