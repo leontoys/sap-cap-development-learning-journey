@@ -1,3 +1,5 @@
-ID,name
-b791a8f5-ed78-4725-94c1-bd3f82880b14,Maythil Radhakrishnan
-e67fad5f-ca0b-4dad-8c0c-67da473ecfdb,OV Vijayan
+ID,name,countryOfBirth_code
+a123e456-789b-12d3-a456-426614174000,Alice Johnson,US
+b234e567-89ab-23d4-b567-526715174111,Markus Müller,DE
+c345f678-9abc-34e5-c678-626816174222,Haruto Tanaka,JP
+d456g789-abcd-45f6-d789-726917174333,Maria Rossi,IT

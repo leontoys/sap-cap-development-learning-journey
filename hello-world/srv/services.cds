@@ -1,4 +1,4 @@
-using { cuid,managed } from '@sap/cds/common';
+using { cuid,managed, Country } from '@sap/cds/common';
 
 
 service bookshop  {
@@ -7,5 +7,6 @@ service bookshop  {
     }
     entity Authors : cuid, managed {
         name : String;
+        countryOfBirth : Country;
     }
 }
