@@ -18,8 +18,8 @@
   },
  "cds": { "requires": {
    "db": {
-      "kind": "sqlite",
-      "credentials": { "url": "db.sqlite" } 
+        "[development]": { "kind": "sqlite", "credentials" : ":memory:" },
+        "[testing]": { "kind": "sqlite", "credentials" : "db.sqlite" }    
    }
 }}
 }
