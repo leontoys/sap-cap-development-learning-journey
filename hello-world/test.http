@@ -1,5 +1,9 @@
 GET http://localhost:4004/odata/v4/bookshop/Books
 
+
+###
+GET http://localhost:4004/odata/v4/bookshop/Books?$expand=author
+
 ###
 POST http://localhost:4004/odata/v4/bookshop/Books
 Content-Type: application/json
