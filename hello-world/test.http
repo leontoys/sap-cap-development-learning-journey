@@ -30,3 +30,20 @@ Content-Type: application/json
     }
   ]
 }
+
+
+###
+PATCH  http://localhost:4004/odata/v4/bookshop/Orders/0e8968ef-1ddd-4b3f-9169-d67481fabd65
+Content-Type: application/json
+
+{
+  "headertext": "Upgrading home laptop",
+  "Items" : [
+    {
+      "pos" : 10,
+      "quantity" : 100,
+      "itemtext" : "Laptops and Desktops"
+    }
+  ]
+}
+
