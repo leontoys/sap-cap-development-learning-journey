@@ -14,3 +14,19 @@ Content-Type: application/json
 {
   "title": "abhayarthikal"
 }
+
+
+###
+POST http://localhost:4004/odata/v4/bookshop/Orders
+Content-Type: application/json
+
+{
+  "headertext": "Purchasing new laptop",
+  "Items" : [
+    {
+      "pos" : 10,
+      "quantity" : 1,
+      "itemtext" : "Laptop"
+    }
+  ]
+}
