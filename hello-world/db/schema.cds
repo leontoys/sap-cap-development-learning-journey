@@ -18,12 +18,17 @@ namespace org.liyon;
     }
 
 entity Orders : cuid { 
-  Items : Composition of many OrderItems on Items.parent = $self;
+  //Items : Composition of many OrderItems on Items.parent = $self;
   headertext : String;
-}
-entity OrderItems { // to be accessed through Orders only
-  key parent : Association to Orders;
+  Items : Composition of many { //this creates items entity with key up_
   key pos : Integer;
   quantity : Integer;
-  itemtext : String;
+  itemtext : String;    
+  }
 }
+//entity OrderItems { // to be accessed through Orders only
+//  key parent : Association to Orders;
+//  key pos : Integer;
+//  quantity : Integer;
+//  itemtext : String;
+//}
