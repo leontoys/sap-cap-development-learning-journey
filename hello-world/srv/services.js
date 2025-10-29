@@ -1,9 +1,5 @@
-const cds = require("@sap/cds");
-
-class HelloService extends cds.ApplicationService {
-  sayHello(name) {
-    return "Hello " + name;
-  }
+module.exports = function (){
+  this.on ('READ',`Books`, (books)=>{
+    console.log("reached here")
+  })
 }
-
-module.exports = HelloService;
