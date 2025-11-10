@@ -1,5 +1,9 @@
 using org from '../db/schema';
 
+extend org.liyon.Books with {
+    virtual urgency : String;
+}
+
 
 service bookshop  {
     entity Books as projection on org.liyon.Books;
