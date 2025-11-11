@@ -4,6 +4,9 @@ const cds = require('@sap/cds')
 const logger = cds.log('cap-logger')
 //add this.after
 
+const { Books } = cds.entities('bookshop')
+logger('books - to destructure',Books)
+
 class BooksService extends cds.ApplicationService{
   init(){
     const {Books} = this.entities
@@ -33,6 +36,9 @@ class BooksService extends cds.ApplicationService{
   this.after('each',Books,(data,req)=>{
     logger(data)
   })
+
+  //unbound function
+  this.on('totalStock',()=>99)
 
     return super.init()
   }

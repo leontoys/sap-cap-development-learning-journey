@@ -1,5 +1,5 @@
-ID,title,author_ID,
-0a1f8b32-9b45-4e7a-9e02-bf1e0b6d9a11,The Art of Coding,a123e456-789b-12d3-a456-426614174000
-0b2e4f45-4e32-41dd-b2d9-672b3dbe8b90,Clean Architecture,b234e567-89ab-23d4-b567-526715174111
-1c3f9e67-1f23-41b2-8c33-ccae7a4d25a0,Journey to TypeScript,c345f678-9abc-34e5-c678-626816174222
-2d4e7a81-6a55-4a5a-96da-cc7b11f9f4d2,SAP CAP in Action,c345f678-9abc-34e5-c678-626816174222
+ID,title,author_ID,Stock
+0a1f8b32-9b45-4e7a-9e02-bf1e0b6d9a11,The Art of Coding,a123e456-789b-12d3-a456-426614174000,10
+0b2e4f45-4e32-41dd-b2d9-672b3dbe8b90,Clean Architecture,b234e567-89ab-23d4-b567-526715174111,20
+1c3f9e67-1f23-41b2-8c33-ccae7a4d25a0,Journey to TypeScript,c345f678-9abc-34e5-c678-626816174222,30
+2d4e7a81-6a55-4a5a-96da-cc7b11f9f4d2,SAP CAP in Action,c345f678-9abc-34e5-c678-626816174222,40

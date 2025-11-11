@@ -12,4 +12,6 @@ service bookshop  {
 
     entity Orders as projection on org.liyon.Orders;
 
+    function totalStock() returns Integer;
+
 }

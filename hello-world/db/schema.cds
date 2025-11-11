@@ -7,6 +7,7 @@ namespace org.liyon;
     entity Books: cuid, managed {
         title : String;
         author : Association to Authors;
+        stock : Integer;
         //also_author : Association to Authors;//creates a field author_ID here
         //author_foreign_key : type of Authors:ID;//now we have to create assosciate manually
         //author_association : Association to Authors on author_association.ID = author_foreign_key;
