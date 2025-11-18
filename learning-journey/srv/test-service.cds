@@ -1,6 +1,6 @@
 
 service myservice {
 
-    function hello() returns String;
+    function hello(name:String) returns String;
 
 }
