@@ -1,9 +1,12 @@
 namespace epm.db;//to uniquely identify the project
 
+using { cuid } from '@sap/cds/common';
+
+
 context master { //for grouping
 
-    entity employees {
-        key empId : String(32);
+    entity employees : cuid {
+        //key empId : String(32);
         nameFirst : String(40);
         nameMiddle : String(40);
         nameLast : String(40);
