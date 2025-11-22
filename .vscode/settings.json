@@ -3,8 +3,8 @@
         {
             "previewLimit": 50,
             "driver": "SQLite",
-            "name": "employeedb",
-            "database": "${workspaceFolder:sap-cap-development-learning-journey}/employee-service/db.sqlite"
+            "database": "epm-model/db.sqlite",
+            "name": "epm"
         }
     ]
 }
