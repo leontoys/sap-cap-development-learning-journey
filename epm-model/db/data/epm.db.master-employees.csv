@@ -1,7 +1,7 @@
-ID,nameFirst,nameMiddle,nameLast,nameInitials,sex,language,phoneNumber,email,Currency,salaryAmount,accountNumber,bankId,bankName
-1d6c8e0a-0e9e-4c7b-a2c6-5f502c3c6f9e,Aisha,W,Khan,AK,F,E,+1-555-1001,aisha.khan@epm.com,USD,75000.00,4578901234567890,01234567,First National Bank
-8f4b1a2d-3d4a-4e5b-9c8d-7e6f5g4h3i2j,Benjamin,,Lee,BL,M,G,+49-30-20020,ben.lee@epm.com,EUR,58500.50,1234567890123456,98765432,Deutsche Kreditbank
-c7e2d9c0-1a2b-3c4d-5e6f-7a8b9c0d1e2f,Chen,Li,Wang,CLW,M,C,+86-10-8888,chen.wang@epm.com,CNY,120000.75,9988776655443322,11223344,Bank of Beijing
-4a9b6c8d-2d3e-4f5g-6h7i-8j9k0l1m2n3o,Sofia,M,Garcia,SMG,F,S,+34-91-30030,sofia.garcia@epm.com,EUR,62500.00,3344556677889900,55667788,Banco Central
-0b3d5e7f-4a5b-6c7d-8e9f-0a1b2c3d4e5f,Taro,H,Tanaka,TH,M,J,+81-3-12345,taro.tanaka@epm.com,JPY,9500000.00,6789012345678901,44556677,Tokyo Bank
-e2c1b0a9-f8e7-d6c5-b4a3-9281706f5e4d,Elara,,Singh,ES,F,H,+91-11-77777,elara.singh@epm.com,INR,850000.00,0011223344556677,22334455,Axis Bank
+nameFirst,nameMiddle,nameLast,nameInitials,sex,language,phoneNumber,email,Currency,salaryAmount,accountNumber,bankId,bankName
+Aisha,W,Khan,AK,F,E,+1-555-1001,aisha.khan@epm.com,USD,75000.00,4578901234567890,01234567,First National Bank
+Benjamin,,Lee,BL,M,G,+49-30-20020,ben.lee@epm.com,EUR,58500.50,1234567890123456,98765432,Deutsche Kreditbank
+Chen,Li,Wang,CLW,M,C,+86-10-8888,chen.wang@epm.com,CNY,120000.75,9988776655443322,11223344,Bank of Beijing
+Sofia,M,Garcia,SMG,F,S,+34-91-30030,sofia.garcia@epm.com,EUR,62500.00,3344556677889900,55667788,Banco Central
+Taro,H,Tanaka,TH,M,J,+81-3-12345,taro.tanaka@epm.com,JPY,9500000.00,6789012345678901,44556677,Tokyo Bank
+Elara,,Singh,ES,F,H,+91-11-77777,elara.singh@epm.com,INR,850000.00,0011223344556677,22334455,Axis Bank
