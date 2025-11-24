@@ -13,12 +13,13 @@ context master { //for grouping
         nameMiddle : String(40);
         nameLast : String(40);
         nameInitials : String(40);
-        sex : String(1);
+        sex : commons.Gender;//String(1);
         language : String(1);
-        phoneNumber : String(20);
-        email : String(30);
-        Currency : String(4);
-        salaryAmount : Decimal(10, 2);
+        phoneNumber : commons.PhoneNumber;//;(20);
+        email : commons.EmailAddress;//String(30);
+        //Currency : String(4);
+        CURRENCY : String(4);//why we changed to capital?
+        salaryAmount : commons.AmountT ;//Decimal(10, 2);
         accountNumber : String(16);
         bankId : String(8);
         bankName : String(64);
@@ -55,4 +56,25 @@ context master { //for grouping
         businesspartner.ADDRESS_GUID = $self //refers to the primary key of current table primary keyNODE_KEY
         }
     
+
+entity product {
+    key NODE_KEY : commons.Guid;
+    PRODUCT_ID : String(28);
+    TYPE_CODE : String(2);
+    CATEGORY : String(32);
+    DESCRIPTION : String(255);
+    SUPPLIER_GUID : Association to businesspartner;
+    TAX_TARIFF_CODE : Integer;
+    MEASURE_UNIT : String(2);
+    WEIGHT_MEASURE : Decimal(15,2);
+    WEIGHT_UNIT : String(2);
+    CURRENCY_CODE : String(4);//why upper case?
+    PRICE : Decimal(15, 2);
+    WIDTH: Decimal(15, 2);
+    DEPTH: Decimal(15, 2);
+    HEIGHT: Decimal(15, 2);
+    DIM_UNIT : String(2);
+}
+
+
 }
