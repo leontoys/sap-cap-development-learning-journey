@@ -6,7 +6,6 @@ using { epm.commons } from './common'; //if we don't give dot the last name afte
 
 
 context master { //for grouping
-
     entity employees : cuid { //no need to give id in the csv file
         //key empId : String(32);
         nameFirst : String(40);
@@ -24,7 +23,6 @@ context master { //for grouping
         bankId : String(8);
         bankName : String(64);
     }
-
     entity businesspartner {
         key NODE_KEY : commons.Guid;
         BP_ROLE : String(2);
@@ -37,7 +35,6 @@ context master { //for grouping
         //foreign key
         ADDRESS_GUID : Association to one address;
     }
-
     entity address  {
         key NODE_KEY : commons.Guid;
         CITY : String(44);
@@ -57,12 +54,12 @@ context master { //for grouping
         }
     
 
-entity product {
+    entity product {
     key NODE_KEY : commons.Guid;
     PRODUCT_ID : String(28);
     TYPE_CODE : String(2);
     CATEGORY : String(32);
-    DESCRIPTION : String(255);
+    DESCRIPTION : localized  String(255);
     SUPPLIER_GUID : Association to businesspartner;
     TAX_TARIFF_CODE : Integer;
     MEASURE_UNIT : String(2);
@@ -75,6 +72,22 @@ entity product {
     HEIGHT: Decimal(15, 2);
     DIM_UNIT : String(2);
 }
+}
 
+context transaction {
+    entity purchaseorder : commons.Amount {
+        key NODE_KEY : commons.Guid;
+        PO_ID : String(40);
+        PARTNER_ID : Association to one master.businesspartner;
+        LIFECYCLE_STATUS : String(1);
+        OVERALL_STATUS : String(1);
+        Items : Composition of many poitems 
+    }
 
+    entity poitems : commons.Amount{
+        key NODE_KEY : commons.Guid;
+        PARENT_KEY : Association to one purchaseorder;
+        PO_ITEM_POS : Integer;
+        PRODUCT_GUID : Association to one master.product;
+    };
 }
