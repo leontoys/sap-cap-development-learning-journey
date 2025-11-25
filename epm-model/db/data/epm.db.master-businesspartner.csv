@@ -1,0 +1,6 @@
+NODE_KEY,BP_ROLE,EMAIL_ADDRESS,PHONE_NUMBER,FAX_NUMBER,WEB_ADDRESS,BP_ID,COMPANY_NAME,ADDRESS_GUID_NODE_KEY
+b5e4a320-1b2c-4d3e-5f6g-7h8i9j0k1l2m,01,contact@acmeusa.com,646-555-0199,646-555-0198,www.acmeusa.com,100000001,Acme Corp USA,781c8280-1a74-4b53-9d9a-9e116039534c
+c6f5b431-2c3d-5e4f-6g7h-8i9j0k1l2m3n,02,info@sap-sample.de,+49 6227 747000,+49 6227 747001,www.sap-sample.de,100000002,SAP SE,9b2d9391-2b85-5c64-0e0b-0f227140645d
+d7g6c542-3d4e-6f5g-7h8i-9j0k1l2m3n4o,01,sales@infotech.in,+91 80 6789 9999,+91 80 6789 8888,www.infotech.in,100000003,InfoTech Solutions,3c3e0402-3c96-6d75-1f1c-1g338251756e
+e8h7d653-4e5f-7g6h-8i9j-0k1l2m3n4o5p,02,support@sony-sample.jp,+81 3-3211-2222,+81 3-3211-3333,www.sony-sample.jp,100000004,Tokyo Electronics,5d4f1513-4d07-7e86-2g2d-2h449362867f
+f9i8e764-5f6g-8h7i-9j0k-1l2m3n4o5p6q,01,supply@uk-logistics.co.uk,020 7946 0999,020 7946 0888,www.uk-logistics.co.uk,100000005,UK Logistics Ltd,1e5g2624-5e18-8f97-3h3e-3i550473978g

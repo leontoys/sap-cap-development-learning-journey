@@ -1,0 +1,11 @@
+code,locale,name,descr
+USD,en,US Dollar,United States Dollar
+USD,de,US Dollar,Vereinigte Staaten Dollar
+EUR,en,Euro,European Currency Unit
+EUR,de,Euro,Europäische Währungseinheit
+GBP,en,British Pound,Great Britain Pound Sterling
+GBP,de,Britisches Pfund,Pfund Sterling von Großbritannien
+JPY,en,Japanese Yen,Japanese national currency
+JPY,ja,日本円,日本の通貨
+INR,en,Indian Rupee,Indian national currency
+INR,hi,भारतीय रुपया,भारतीय राष्ट्रीय मुद्रा

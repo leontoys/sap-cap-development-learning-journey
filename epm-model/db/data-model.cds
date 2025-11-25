@@ -1,8 +1,7 @@
 namespace epm.db;//to uniquely identify the project
 
-using { cuid } from '@sap/cds/common';
+using { cuid, Currency } from '@sap/cds/common';
 using { epm.commons } from './common'; //if we don't give dot the last name after dot is taken as alias
-
 
 
 context master { //for grouping
@@ -16,8 +15,9 @@ context master { //for grouping
         language : String(1);
         phoneNumber : commons.PhoneNumber;//;(20);
         email : commons.EmailAddress;//String(30);
+        loginName : String(32);
         //Currency : String(4);
-        CURRENCY : String(4);//why we changed to capital?
+        currency : Currency ;//why it is currency_code in the file?
         salaryAmount : commons.AmountT ;//Decimal(10, 2);
         accountNumber : String(16);
         bankId : String(8);
@@ -65,7 +65,7 @@ context master { //for grouping
     MEASURE_UNIT : String(2);
     WEIGHT_MEASURE : Decimal(15,2);
     WEIGHT_UNIT : String(2);
-    CURRENCY_CODE : String(4);//why upper case?
+    CURRENCY : Currency;//why upper case?
     PRICE : Decimal(15, 2);
     WIDTH: Decimal(15, 2);
     DEPTH: Decimal(15, 2);
@@ -81,7 +81,7 @@ context transaction {
         PARTNER_ID : Association to one master.businesspartner;
         LIFECYCLE_STATUS : String(1);
         OVERALL_STATUS : String(1);
-        Items : Composition of many poitems 
+        Items : Composition of many poitems on Items.PARENT_KEY = $self
     }
 
     entity poitems : commons.Amount{
