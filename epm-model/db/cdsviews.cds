@@ -22,6 +22,51 @@ context cdsviews {
         PARTNER_ID.ADDRESS_GUID.COUNTRY as ![Country],
         PARTNER_ID.ADDRESS_GUID.CITY as ![City]
     }
+
+    //Product Help View
+    define view ![ProductHelpView] as 
+    select from master.product{
+        @EndUserText.Label : [
+            {language:'EN',text:'Product ID'},
+            {language:'ML',text:'ഉൽപ്പന്ന ഐഡി'}
+        ]
+        PRODUCT_ID as ![ProductId],
+        DESCRIPTION as ![Description],
+        CATEGORY as ![Category],
+        PRICE as ![Price],
+        CURRENCY as ![Currency],
+        SUPPLIER_GUID.COMPANY_NAME as ![SuplierName]
+    }   
+
+    //Item View
+    define view ![ItemView] as 
+    select from transaction.poitems{
+        PARENT_KEY.PARTNER_GUID.NODE_KEY as ![SupplierId],
+        PRODUCT_GUID.NODE_KEY as ![ProductKey],
+        GROSS_AMOUNT as ![GrossAmount],
+        NET_AMOUNT as ![NetAmount],
+        TAX_AMOUNT as ![TaxAmount],
+        currency as ![Currency],
+        PARENT_KEY.OVERALL_STATUS as ![OverallStatus]
+    }
+    
+    //mixin - loose coupling , lazy loading
+    //never load dependent data until asked{}
+    define view ![ProductView] as select master.product
+    Mixin {
+        PO_ITEMS : Association to many ItemView on PO_ITEMS.ProductKey = $projection.ProductId
+    } as mixin into {
+        NODE_KEY as ![ProductId],
+        DESCRIPTION as ![ProductName],
+        CATEGORY as ![Category],
+        SUPPLIER_GUID.BP_ID as ![SupplierId],
+        SUPPLIER_GUID.COMPANY_NAME as ![SuplierName],
+        SUPPLIER_GUID.ADDRESS_GUID.COUNTRY as ![Country],
+        //exposed Assosciation
+        PO_ITEMS as ![To_Items]
+    }
+        
+
 }
 
 

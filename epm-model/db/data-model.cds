@@ -78,7 +78,7 @@ context transaction {
     entity purchaseorder : commons.Amount {
         key NODE_KEY : commons.Guid;
         PO_ID : String(40);
-        PARTNER_ID : Association to one master.businesspartner;
+        PARTNER_GUID : Association to one master.businesspartner;
         LIFECYCLE_STATUS : String(1);
         OVERALL_STATUS : String(1);
         Items : Composition of many poitems on Items.PARENT_KEY = $self
